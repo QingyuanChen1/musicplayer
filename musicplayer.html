@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="css/musicplayer.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <script src="https://kit.fontawesome.com/a07d6bc296.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<ul class="glass">
+    <li class="item one"><i class="fas fa-music fa-3x"></i></li>
+    <li class="item two"><h1>Final Project -Music Player</h1></li>
+</ul>
+<form class="filters" name="filterproducts" id="filterproducts">
+    <h2>Filter</h2>
+    <div class="filter-fields">
+        <fieldset>
+            <legend hidden> Display Order</legend>
+            <label for="searchName">Name</label>
+            <input type="search" name="searchName" id="searchName">
+        </fieldset>
+        <fieldset>
+            <legend hidden></legend>
+            <label for="rate">Rate</label>
+            <input type="number" name="rate" id="rate" value="5">
+        </fieldset>
+        <input type="submit" class="submit" id="submit">
+    </div>
+</form>
+
+<div class="description">
+    <ul class="information" id="information">
+        <li class="playlist"><b>Playlist:</b></li>
+
+    </ul>
+    <div class="comb">
+        <img src="albumpic/1.jpg" alt="albumpicture" class="albumpicture" id="albumpicture" width="400" height="400">
+        <div class="albuminfo">
+            <p class="name" id="name"></p>
+            <p class="albumname" id="albumname"></p>
+        </div>
+        <div class="button">
+            <a href="#" class="previous" id="previous" title="Previous"><i class="fas fa-2x fa-backward"></i></a>
+            <a href="#" class="stop" id="stop" title="Stop"><i class="fas fa-2x fa-stop" id="fa-stop"></i></a>
+            <a href="#" class="next" id="next" title="Next"><i class="fas fa-2x fa-forward"></i></a>
+        </div>
+        <div class="progress">
+            <data id="tracktime">0:00</data>
+            <input type="range" id="trackprogress" min="0" max="1" step=".01" value="0">
+            <data id="trackduration">0:00</data>
+        </div>
+        <div>
+        </div>
+    </div>
+
+
+
+</div>
+</body>
+<script src="js/musicplayer.js"></script>
+</html>

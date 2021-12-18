@@ -1,0 +1,172 @@
+body{
+    margin: 0;
+}
+.glass{
+    /*
+    Glassmorphism is copied from https://hype4.academy/tools/glassmorphism-generator
+    */
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    text-align: center;
+    font-family: 'Sofia',sans-serif;
+    display: flex;
+    flex-flow: row;
+    list-style: none;
+    justify-content: flex-start;
+}
+.fa-music{
+    position: absolute;
+    top: 35px;
+}
+fieldset input{
+    width: 100%;
+}
+.two{
+    flex-grow: 2;
+}
+.description{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10rem;
+}
+.filters{
+    width: 30%;
+    grid-column-start: 1;
+    grid-column-end: span 1;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+    background: rgba( 255, 255, 255, 0.45 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 11px );
+    -webkit-backdrop-filter: blur( 11px );
+    border-radius: 30px;
+    padding: 2rem;
+    list-style: none;
+}
+.filter-fields{
+    display: flex;
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+    grid-column-start: 1;
+    grid-column-end: span 1;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+    height: 100%;
+    background: rgba( 255, 255, 255, 0.45 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 11px );
+    -webkit-backdrop-filter: blur( 11px );
+    border-radius: 30px;
+    padding: 2rem;
+    list-style: none;
+}
+.information p{
+    font-size: 1rem;
+    cursor: pointer;
+    float: left;
+}
+.information i{
+    margin-top: 0.5em;
+    float: right;
+}
+
+.song{
+    margin-top: 10px;
+    border-bottom: 1px solid black;
+}
+.song p i{
+    float:right;
+}
+.albumpicture{
+    grid-column: 2;
+    border-radius: 50%;
+    padding-left: 1rem;
+    width: 30%;
+    height: auto;
+
+}
+.playlist{
+    font-size: 1.5rem;
+}
+.comb{
+    grid-column: 2;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+    gap: 10rem;
+}
+.albuminfo {
+    width: 35%;
+    height: 10%;
+    background: rgba(255, 255, 255, 0.45);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(11px);
+    -webkit-backdrop-filter: blur(11px);
+    border-radius: 15px;
+    padding-left: 30px;
+}
+fieldset{
+    border: transparent;
+}
+
+
+.button{
+    margin-top: 1rem;
+    display: flex;
+    width: 39%;
+    height: 10%;
+    background: rgba( 255, 255, 255, 0.45 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 11px );
+    -webkit-backdrop-filter: blur( 11px );
+    border-radius: 15px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.button i{
+    color: black;
+}
+
+.likeit{
+    opacity: 0.25;
+}
+
+.checkbox{
+    float:left;
+}
+
+@keyframes rotation {
+    from{
+        transform: rotate(0deg);
+    }
+    to
+    {
+        transform: rotate(360deg);
+    }
+}
+
+.progress{
+    margin-top: 1rem;
+    text-align: center;
+    width: 32%;
+    background: rgba( 255, 255, 255, 0.45 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 11px );
+    -webkit-backdrop-filter: blur( 11px );
+    border-radius: 15px;
+    padding: 2rem;
+    list-style: none;
+    align-items: center;
+}
+progress input{
+    flex-grow: 1;
+
+}
+.albumpicture{
+    transform: rotate(360deg);
+     animation: rotation 2s infinite linear;
+}
+
+
